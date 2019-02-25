@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+div,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  position: relative;
+}
+
+.tabs li {
+  position: relative;
+  top: 1px;
+  z-index: 2;
+  color: #527197;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabs li.active {
+  color: rgba(0, 0, 0, 0.60);
+  border-top: 1px solid rgba(0, 0, 0, 0.30);
+  border-right: 1px solid rgba(0, 0, 0, 0.30);
+  border-left: 1px solid rgba(0, 0, 0, 0.30);
+  border-bottom: 1px solid #ffffff;
+}
+
+.tabs li:hover {
+  color: rgba(0, 0, 0, 0.30);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.content-box {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(0, 0, 0, 0.30);
+  padding-top: 10px;
+}
