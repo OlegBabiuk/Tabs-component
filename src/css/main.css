@@ -22,7 +22,7 @@ li {
   position: relative;
   top: 1px;
   z-index: 2;
-  color: #527197;
+  color: rgb(73, 117, 170);
   border: 1px solid transparent;
   padding: 7px 10px;
   border-radius: 5px 5px 0 0;
