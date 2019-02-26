@@ -1,13 +1,30 @@
-/* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-function Tab() {
-  return (<p>Hello World</p>);
+function Tab({ onClick, tabTitle, className }) {
+  const myClassName = className || '';
+  return (
+    <li
+      onClick={() => onClick(tabTitle)}
+      className={myClassName}
+    >
+      {tabTitle}
+    </li>
+  );
 }
 
-// Tab.PropTypes = {};
-// Tab.defaultProps = {};
+Tab.propTypes = {
+  className: PropTypes.string,
+  tabTitle: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
+Tab.defaultProps = {
+  className: '',
+  tabTitle: '',
+  onClick: () => console.log("onClick didn't pass"),
+};
 
 export default Tab;

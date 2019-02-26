@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Tabs from './Tabs';
+import App from './App';
 
-ReactDOM.render(<Tabs />, document.getElementById('tabs'));
+ReactDOM.render(<App />, document.getElementById('tabs'));
 
 module.hot.accept();
